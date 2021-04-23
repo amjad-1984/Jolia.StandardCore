@@ -1,0 +1,148 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Jolia.Core</RootNamespace>
+    <Company>Gloriors</Company>
+    <Authors>Gloriors</Authors>
+    <Product>Jolia.Core.Standard</Product>
+    <PackageId>Jolia.Core.Standard</PackageId>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\Output\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Temp\ApiAuthorizeAttribute.cs" />
+    <Compile Remove="Temp\ApplicationUserViewModel.cs" />
+    <Compile Remove="Temp\BasicAuthentication.cs" />
+    <Compile Remove="Temp\ImageRangeAttribute.cs" />
+    <Compile Remove="Temp\MyStreamProvider.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Objects\FormModels\Accounts\" />
+    <Folder Include="Objects\Models\" />
+    <Folder Include="Providers\" />
+    <Folder Include="Temp\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.95.3" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.24" />
+    <PackageReference Include="itextsharp.netstandard" Version="5.5.13.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\RAccount.ar.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RAccount.ar.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\RAccount.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RAccount.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\RCalendar.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RCalendar.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\RFeatures.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RFeatures.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\RFonts.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RFonts.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\RGlobal.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RGlobal.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\RIO.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RIO.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\RSetting.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RSetting.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\RSMS.Designer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>RSMS.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\RAccount.ar.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+      <LastGenOutput>RAccount.ar.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\RAccount.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+      <LastGenOutput>RAccount.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\RCalendar.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>RCalendar.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\RFeatures.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>RFeatures.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\RFonts.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>RFonts.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\RGlobal.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>RGlobal.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\RIO.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>RIO.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\RSetting.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>RSetting.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\RSMS.resx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>RSMS.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

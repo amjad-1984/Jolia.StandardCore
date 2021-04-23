@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Jolia.Core.Standard</id>
+    <version>1.0.1</version>
+    <authors>Gloriors</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="ClosedXML" version="0.95.3" exclude="Build,Analyzers" />
+        <dependency id="HtmlAgilityPack" version="1.11.24" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.Annotations" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="System.Drawing.Common" version="5.0.2" exclude="Build,Analyzers" />
+        <dependency id="itextsharp.netstandard" version="5.5.13.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Work\Jolia\Output\netstandard2.0\ar\Jolia.StandardCore.resources.dll" target="lib\netstandard2.0\ar\Jolia.StandardCore.resources.dll" />
+    <file src="D:\Work\Jolia\Output\netstandard2.0\Jolia.StandardCore.dll" target="lib\netstandard2.0\Jolia.StandardCore.dll" />
+  </files>
+</package>
